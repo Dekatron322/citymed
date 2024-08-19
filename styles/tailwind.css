@@ -167,6 +167,14 @@ body {
   color: #fbfafc;
 }
 
+.containerbg {
+  background: #0505050f;
+}
+
+[data-theme="dark"] .containerbg {
+  background: #fafafa0f;
+}
+
 .add-button {
   @apply flex content-center items-center gap-1 rounded-md bg-[#076fc6] px-2 py-2 text-[#ffffff] transition-colors duration-500 hover:bg-[#50c9f4] hover:text-[#000000];
 }
@@ -211,7 +219,7 @@ body {
 }
 
 .navbar {
-  @apply paddings fixed w-screen;
+  @apply paddings fixed z-40 w-screen;
 }
 
 .dashboardnav {
