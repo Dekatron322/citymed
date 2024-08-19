@@ -184,7 +184,7 @@ body {
 }
 
 [data-theme="dark"] .button-primary {
-  @apply flex items-center justify-center rounded-sm border bg-transparent px-10 text-[#FFFFFF] transition-colors duration-500 hover:border-[#50c9f4] hover:bg-[#50c9f4] hover:text-[#000000] focus:bg-[#50c9f4] focus:text-[#000000]  active:bg-[#076fc6]  max-sm:h-10 max-sm:w-full;
+  @apply flex items-center justify-center rounded-sm  bg-[#0a72c7] px-10 text-[#FFFFFF] transition-colors duration-500 hover:border-[#50c9f4] hover:bg-[#50c9f4] hover:text-[#000000] focus:bg-[#50c9f4] focus:text-[#000000]  active:bg-[#076fc6]  max-sm:h-10 max-sm:w-full;
 }
 
 .button-outline {
