@@ -205,12 +205,13 @@ export default function Patients() {
 
             <div className="mb-4 flex h-full flex-col gap-2 px-16 max-sm:px-4">
               {loading ? (
-                <div className="loading-text flex h-full items-center justify-center">
-                  {"loading...".split("").map((letter, index) => (
-                    <span key={index} style={{ animationDelay: `${index * 0.1}s` }}>
-                      {letter}
-                    </span>
-                  ))}
+                <div className="loading-container pulse flex h-full items-center justify-center">
+                  <div className="icon-style content-center">
+                    <Image src="/mainlogo.png" width={150} height={43} alt="dekalo" />
+                  </div>
+                  <div className="dark-icon-style content-center">
+                    <Image src="/lightlogo.png" width={150} height={43} alt="dekalo" />
+                  </div>
                 </div>
               ) : filteredPatients.length === 0 ? (
                 <div className="mt-auto flex h-full w-full items-center justify-center">

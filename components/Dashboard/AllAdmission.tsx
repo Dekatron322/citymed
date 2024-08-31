@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react"
 import { useRouter } from "next/navigation"
 import { PiDotsThree } from "react-icons/pi"
+import Image from "next/image"
 
 interface CheckApp {
   id: string
@@ -154,12 +155,13 @@ const AllAdmission: React.FC = () => {
   return (
     <div className="flex h-full flex-col">
       {isLoading ? (
-        <div className="loading-text flex h-full items-center justify-center">
-          {"loading...".split("").map((letter, index) => (
-            <span key={index} style={{ animationDelay: `${index * 0.1}s` }}>
-              {letter}
-            </span>
-          ))}
+        <div className="loading-container pulse flex h-full items-center justify-center">
+          <div className="icon-style content-center">
+            <Image src="/mainlogo.png" width={150} height={43} alt="dekalo" />
+          </div>
+          <div className="dark-icon-style content-center">
+            <Image src="/lightlogo.png" width={150} height={43} alt="dekalo" />
+          </div>
         </div>
       ) : (
         <>
